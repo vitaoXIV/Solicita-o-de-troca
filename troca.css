@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 :root {
+=======
+ :root {
+>>>>>>> 94908d2a48167b37af251d327ab284ad2ea93fb4
     --cor-primaria:rgb(181,193,142) ;
     --cor-secundaria:rgb(234,219,200) ;
     --cor-terciaria:rgb(199,183,163);
@@ -149,4 +153,8 @@ nav a:first-child {  /*o tracinho no meio*/
    align-items:center;
    justify-content: center;
    margin-top:5px;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 94908d2a48167b37af251d327ab284ad2ea93fb4
