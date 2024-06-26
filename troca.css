@@ -1,8 +1,7 @@
- :root {
-    --cor-primaria:rgb(181,193,142) ;
-    --cor-secundaria:rgb(234,219,200) ;
-    --cor-terciaria:rgb(199,183,163);
-    --preto: black ;
+:root {
+    --cor-primaria:#9ea671 ;
+    --cor-secundaria: #ececec;
+    --cor-terciaria: #dac7b9;
  }
 
  * {
@@ -10,143 +9,112 @@
     margin: 0;
     box-sizing: border-box;
  }
-
- 
- 
- 
- header {
-    background-color: var(--cor-primaria); /*parte verde*/
-    padding: 1%;
+ body{
+    background-color: var(--cor-primaria);
+ }
+header{
     display: flex;
-   align-items: center;
-   
+    background-color: var(--cor-primaria);
+    justify-content: space-between;
+    height: 135px;
+    align-items: center;
 }
-
-#form-buscar {   /*caixa de busca*/
-    flex-grow: 1;
+.Login{
     display: flex;
     align-items: center;
-    justify-content: center;
-    position: relative; 
-
+    flex-direction: column;
+    margin: 0px 20px;
+    font-size: 20px;
 }
-
-#buscar {  /*tamanho, posição e grossura da caixa de busca*/
-    flex-grow: 0.75;
-    padding: 0.5rem;
-    border-radius: 5px;
+.Login a{
+    color: white;
+}
+header > h1{
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    color: white;
+    font-size: 30px;
+}
+header > form{
+    position: relative;
+    display: flex;
+    margin: 0px 20px;
+    align-items: center;
+    background-color: WHITE;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+form input{
+    height: 35px;
+ 
+    padding-left: 10px;
     border: none;
     outline: none;
-    
+    border-radius: 20px;
 }
-
-#btn-buscar {
-    background-color: transparent; /*botao da lupa*/
+button{
+    background-color: transparent;
     border: none;
-    position: absolute;
-    right: 9%;
-    cursor: pointer; 
-    background: var(--cor-secundaria);
+    outline: none;
+    margin-right: 10px;
 }
-
-
-
-nav {
-   
-    text-align: center;
-    background-color: var(--cor-secundaria);
-    padding: 10px;
+ ::-webkit-input-placeholder {
+    color: var(--cor-primaria);
+ }
+ nav{
+    display: flex;
     justify-content: space-between;
-   
-    
-    
-
-}
-
-nav a:first-child {  /*o tracinho no meio*/
-   
+    height: 31px;
+    background-color: var(--cor-secundaria);
+ }
+ nav a{
+    display: flex;
     align-items: center;
     color: var(--cor-primaria);
-   
-    
-}
-
-.getting { /*configuração do livro*/
-    color: white;
     font-size: 20px;
+    margin: 0px 30px;
     text-decoration: none;
-    display:flex; /*deixar o livro em cima da palavra*/
-    flex-direction: column;  /*deixar o livro em cima da palavra*/
-    align-items: center;  /*deixar o livro em cima da palavra*/
-    margin: 0 0.5rem;  /*deixar o livro em cima da palavra*/
-    
+ }
+ span{
+    margin: auto;
+    border: 1px solid var(--cor-primaria);
+    height: 15px;
+ }
+ main{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 100%;
+    margin: 0px 40px;
+ }
+ .livro{
+    margin: 50px 0px 0px 100px;
+ }
+ .livro img{
+    border: 1px solid white;
+    border-radius: 10px;
+ }
+ .informação{
+    margin-top: 50px;
+    background-color: var(--cor-terciaria);
+    width: 300px;
+    height: 100px;
+    border-radius: 10px;
+    text-align: center;
+ }
+ .creadibilidade{
 
-    }
 
-#livro {
-    
+ }
+ #formulario{
     align-items: center;
-    color: var(--cor-primaria);
-    margin-right: 20%;
-    text-decoration: none;
-    
-}
-
-#troca {
-   
-    align-items: center;
-    color: var(--cor-primaria);
-    margin-right: 15%;
-    text-decoration: none;
-}
-
-#desejo {
-    
-    align-items: center;
-    color: var(--cor-primaria);
-    margin-right: 10%;
-    text-decoration: none;
-}
-
-#ajudar {
-   
-    align-items: center;
-    color: var(--cor-primaria);
-    text-decoration: none;
-}
-
-#sem {
-    color: white;
-    
-}
-
-#quem {
-    row-gap: 20%;
-    margin-right: 20%;
-    text-decoration: none;
-}
-    
-.card {
-    width: 250px;
-    height: 350px;
-    background:#545b3c;
-    margin-top: 70px;
-    margin-left: 70px;
-    
-}
-
-#sucesso {
-  text-align: center;
-    color: white;
-   display: flex;
-   align-items: center;
-   justify-items: center;
-   font-size: 40px;
-}
- 
-#imagem {
-   display: flex;
-   align-items:center;
-   justify-content: center;
-   margin-top:5px;
-}
+    justify-content: center;
+    margin-top: 50px;
+ }
+ #formulario input{
+    display: flex;
+    margin-bottom: 40px;
+    width: 400px;
+    justify-content: center;
+ }
