@@ -7,49 +7,71 @@
     <link rel="stylesheet" href="troca.css">
 </head>
 <body>
-<header>
-     
- <a href="" class="getting">
-    <img src="IMGS/Livros-e-Manuais-Passo-Fundo-Super-Cópias-Gráfica-Digital-2.png" alt="" width="50px" height="50px" id="livru"> 
-Getting Books
- </a>
- 
-     <form action="" id="form-buscar">
-            <input type="search" name="buscar" id="buscar" placeholder="Buscar...">
-            <button type="submit" id="btn-buscar"><img src="IMGS/lupa.png" alt=""
-                    width="30px" height="30px">
-            </button>
-
+    <header>
+        <div class="Login">
+            <img src="IMGS/do-utilizador.png" alt="" width="50px">
+            <a href="">Login</a>
+        </div>
+        <h1>Getting Books <img src="IMGS/Livros-e-Manuais-Passo-Fundo-Super-Cópias-Gráfica-Digital-2.png" alt="" width="50px"></h1>
+        <form action="">
+            <input type="search" name="ibarra" id="barra" placeholder="buscar... ">
+            <button><img src="IMGS/lupa.png" alt="" width="25px"></button>
         </form>
-        <a href="" class="icon-link" id="sem">
-            
-            Sem login? Cadastre-se agora mesmo
-            <br>
-            Troque livros e embarque na leitura
-        </a>
-        
-        
-           
-        
-</header>
-<nav>
-    <a href="" id="quem"> Quem Somos</a>
-    <a href="" id="livro"> Livros</a>
-    <a href="" id="troca"> Trocas</a>
-    <a href="" id="desejo"> Lista de Desejos</a>
-    <a href="" id="ajudar"> Ajuda</a>
-</nav>
+    </header>
+    <nav>
+        <a href="">Quem somos</a>
+        <span></span>
+        <a href="">Livros</a>
+        <span></span>
+        <a href="">Trocas</a>
+        <span></span>
+        <a href="">Lista de desejo</a>
+        <span></span>
+        <a href="">Ajuda</a>
+    </nav>
+    <main>
+        <div class="livro">
+            <img src="IMGS/livro.jpg" alt="" height="450px">
+        </div>
+        <div class="informação">
+            <h2>Dono do Livro</h2>
+            <h3>Vitor Emanuel</h3>
+            <img src="IMGS/IMG_0407.png" alt="" height="60px" width="30px" class="eu">
 
-<div class="card"> 
-    <h1 id="sucesso">Obras de maior sucesso <br></h1>
-    <br>
-    <div id="imagem">
-        <img src="IMGS/ha-muitos-livros-abertos-na-mesa_200904-734.avif" alt="" height="170px" width="170px">
-        
-    </div>
+            <div class="credibilidade">
+                <h2>Credibilidade no Getting Books</h2>
+                <img src="IMGS/avaliacao.png" alt="" height="200px">
+            </div>
+
+        </div>
+        <form action="" id="formulario">
+            <div>
+                <label for="cep">CEP</label>
+                <input type="text" name="icep" id="cep" placeholder="cep">
+            </div>
+            <div>
+                <label for="tel">TELEFONE</label>
+                <input type="tel" name="itel" id="tel" placeholder="telefone">
+            </div>
+            <div>
+                <label for="bairro">BAIRRO</label>
+                <input type="text" name="ibairro" id="bairro" placeholder="Bairro">
+            </div>
+            <div>
+                <label for="complemento">COMPLEMENTO</label>
+                <input type="text" name="icomplemento" id="complemento" placeholder="">
+            </div>
+            <div>
+                <label for="cidade">CIDADE</label>
+                <input type="text" name="icidade" id="cidade" placeholder="Cidade">
+            </div>
+        </form>
     
-</div>
-
-
+       
+    </main>
+    <div id="botoes">
+        <div id="botao-1"> <a href="">Encaminhar Solicitação</a></div>
+        <div id="botao-2"> <a href="">Voltar</a></div>
+    </div>
 </body>
 </html>

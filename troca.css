@@ -2,6 +2,7 @@
     --cor-primaria:#9ea671 ;
     --cor-secundaria: #ececec;
     --cor-terciaria: #dac7b9;
+    --cor-quatro: #B5C18E;
  }
 
  * {
@@ -83,17 +84,20 @@ button{
  }
  main{
     position: relative;
-    display: grid;
+    display:grid;
     grid-template-columns: repeat(3, 1fr);
     height: 100%;
     margin: 0px 40px;
  }
  .livro{
-    margin: 50px 0px 0px 100px;
+    margin: auto;
+
  }
  .livro img{
     border: 1px solid white;
     border-radius: 10px;
+    
+    
  }
  .informação{
     margin-top: 50px;
@@ -102,11 +106,10 @@ button{
     height: 100px;
     border-radius: 10px;
     text-align: center;
+    flex-direction: row-reverse;
+    
  }
- .creadibilidade{
-
-
- }
+ 
  #formulario{
     align-items: center;
     justify-content: center;
@@ -118,3 +121,51 @@ button{
     width: 400px;
     justify-content: center;
  }
+
+ .eu {
+    max-width: 400px;
+    aspect-ratio: 1 / 1;
+    border-radius: 60%;
+    object-fit: cover;
+}
+
+ div > h2,h3 {
+   display: flex;
+    align-items: start;
+ }
+    
+ #botoes {
+display: flex;
+justify-content:space-evenly;
+align-items: center;
+
+ }
+
+ #botao-1 {
+   background: var(--cor-terciaria);
+   height: 30px;
+   width: 300px;
+   border: 2px solid white;
+   border-radius: 20px;
+   text-align: center;
+   align-items: center;
+  justify-content: center;
+  display: flex;
+  
+ }
+
+ #botao-2 {
+   background: var(--cor-quatro);
+   height: 30px;
+   width: 300px;
+   border: 2px solid white;
+   border-radius: 20px;
+   align-items: center;
+  justify-content: center;
+  display: flex;
+  color: black;
+  
+  
+ }
+
+
