@@ -143,7 +143,7 @@ align-items: center;
 
  #botao-1 {
    background: var(--cor-terciaria);
-   height: 30px;
+   height: 50px;
    width: 300px;
    border: 2px solid white;
    border-radius: 20px;
@@ -151,21 +151,27 @@ align-items: center;
    align-items: center;
   justify-content: center;
   display: flex;
-  
- }
+  }
 
  #botao-2 {
    background: var(--cor-quatro);
-   height: 30px;
+   height: 50px;
    width: 300px;
    border: 2px solid white;
    border-radius: 20px;
    align-items: center;
   justify-content: center;
   display: flex;
-  color: black;
-  
-  
- }
+  }
 
+  #volta {
+   color: black;
+   font-size: 20px;
+  }
+
+  #encaminha {
+   color: black;
+   font-size: 20px;
+   
+  }
 
