@@ -14,19 +14,36 @@
 body {
    background-color: var(--cor-primaria);
 }
-
+#central-de-ajuda{
+   background-color: #545b3c;
+   justify-content: end;
+   padding: 20px;
+}
+#central-de-ajuda a{
+   color: white;
+}
 header {
    display: flex;
    background-color: var(--cor-primaria);
    justify-content: space-between;
    height: 135px;
    align-items: center;
-}
+   margin-right: 100px;
 
+}
+.logoM{
+   display: flex;
+   flex-direction: row-reverse;
+   align-items: center;
+   justify-content: center;
+}
+.logoM h1{
+
+   color: white;
+}
 .Login {
    display: flex;
    align-items: center;
-   flex-direction: column;
    margin: 0px 20px;
    font-size: 20px;
 }
@@ -46,29 +63,46 @@ header>h1 {
 header>form {
    position: relative;
    display: flex;
-   margin: 0px 20px;
    align-items: center;
-   background-color: WHITE;
-   border: 2px solid black;
    border-radius: 20px;
 }
 
 form input {
    height: 35px;
-
    padding-left: 10px;
    border: none;
    outline: none;
    border-radius: 20px;
+   width: 800px;
 }
 
-button {
+.lupa {
+   position: absolute;
+   left: 95%;
    background-color: transparent;
    border: none;
    outline: none;
    margin-right: 10px;
-}
 
+}
+.minha-lista{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.minha-lista a{
+   color: white;
+   font-size: 20px;
+}
+.trocas{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.trocas a{
+   color: white;
+   font-size: 20px;
+}
 ::-webkit-input-placeholder {
    color: var(--cor-primaria);
 }
@@ -172,9 +206,11 @@ section {
 }
 .buton-final{
    display: flex;
-   margin: auto;
+   justify-content: center;
    margin-top: 40px;
    font-size: 20px;
+   background-color: transparent;
+   border: none;
 }
 .buton-final a{
    color: black;
@@ -185,9 +221,7 @@ section {
    border-radius: 40px;
    border: 2px solid var(--cor-secundaria);
 }
-.buton-final .button-verde{
-   background-color: #b5c18e;
-}
+
 .form-mobile{
    display: none;
 }
